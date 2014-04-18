@@ -150,7 +150,7 @@ var player = (function() {
 		if (Game.UpgradesInStore.length > 0) {
 
 			for (var i=0;i<Game.UpgradesInStore.length;i++) {
-				if (!forbidden_upgrade(Game.UpgradesInStore[i]) && // ignoring certain upgrades until I come up with strategies for dealing with them
+				if (forbidden_upgrade(Game.UpgradesInStore[i]) && // ignoring certain upgrades until I come up with strategies for dealing with them
 					Game.UpgradesInStore[0].getPrice() < Game.cookies) {
 					Game.UpgradesInStore[0].buy();
 					break;
