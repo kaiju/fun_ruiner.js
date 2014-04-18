@@ -108,7 +108,7 @@ var player = (function() {
 		}
 
 		// click any wrinklers
-		if (Game.elderWrath > 1) { // check for grandmapocalypse?
+		if (Game.elderWrath > 0) { // check for grandmapocalypse?
 			for (var i=0;i<Game.wrinklers.length;i++) {
 				if (Game.wrinklers[i].close === 1) {
 					Game.wrinklers[i].hp--;
